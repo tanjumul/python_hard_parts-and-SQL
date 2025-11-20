@@ -113,13 +113,24 @@ count_5 = t.count(5)"""
 #         d[i]=1 
 # print(d)
 
-a = [1,1,1,2,2,2,3,3,3,4,4,55,4,5,5,6,7,8]
+# a = [1,1,1,2,2,2,3,3,3,4,4,55,4,5,5,6,7,8]
 
-b = {}
+# b = {}
 
-for i in a: 
-    if i in b.keys(): 
-        b[i]+=1
+# for i in a: 
+#     if i in b.keys(): 
+#         b[i]+=1
+#     else : 
+#         b[i] = 1 
+# print(b)
+
+#making the distinct and summing them as outputs here : 
+d1 = {10:100,20:200,40:300}
+d2 = {40:400,50:500,60:600}
+
+for i in d2: 
+    if i in d1.keys():
+        d1[i]+=d2[i]
     else : 
-        b[i] = 1 
-print(b)
+        d1[i] = d2[i]
+print(d1)
