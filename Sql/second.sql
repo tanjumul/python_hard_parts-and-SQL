@@ -1,3 +1,4 @@
+-- Active: 1763750015646@@127.0.0.1@5432@bankdb
 -- DROP TABLE IF EXISTS STUDENTS; 
 
 
@@ -84,7 +85,8 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 -- order by emp_id; 
 
 -- to see the 'hr' count : 
-select count(*) as hr_employee_count
-from employee 
-where dept = 'HR'
+-- select count(*) as hr_employee_count
+-- from employee 
+-- where dept = 'HR'
 -- select * from employee order by emp_id; 
+select * from employee LIMIT 5; 
