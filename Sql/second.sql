@@ -153,6 +153,9 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 
 -- select replace(dept, 'IT','HR') from employee; --Changing the dept collumn's it to hr with replace function 
 
+--reverse 
+
+select reverse('Hello')
 
 
 
