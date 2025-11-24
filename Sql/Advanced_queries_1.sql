@@ -1,3 +1,4 @@
+
 drop table if EXISTS persons;
 
 create table persons(
@@ -20,4 +21,7 @@ insert into persons( name , city , age ) values
 
 select * from persons; 
 
-alter table persons add column smoker varchar(20); 
+alter table persons add column smoker varchar(20) default 0 ; 
+
+alter table persons rename column smoker to addicted ;
+select * from persons; 
