@@ -155,7 +155,8 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 
 --reverse 
 
-select reverse('Hello')
+-- select reverse('Hello')
+select length(lname) from employee ; 
 
 
 
