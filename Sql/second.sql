@@ -183,7 +183,12 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 -- need Tanjumul:Alom:it in this way 
 
 -- need : 1:Tanjumul ALom : IT : 500000 
-select concat_ws( ':', concat_ws(' ',fname,lname),emp_id , dept) from employee limit 1 ;
+-- select concat_ws( ':', concat_ws(' ',fname,lname),emp_id , dept) from employee limit 1 ; 
+
+--trickey where i need the dpet's first charecter then the emp id and then the full name
+ 
+ select concat(left(dept,1) , emp_id) , fname from employee; 
+
 
 
 
