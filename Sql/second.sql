@@ -187,11 +187,10 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 
 --trickey where i need the dpet's first charecter then the emp id and then the full name
  
- select concat(left(dept,1) , emp_id) , fname from employee; 
+--  select concat(left(dept,1) , emp_id) , fname from employee; 
 
 
-
-
+--Very Important : Alter Query
 
 
 
