@@ -182,7 +182,8 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 
 -- need Tanjumul:Alom:it in this way 
 
-select concat_ws(':',fname , lname , dept) from employee ;
+-- need : 1:Tanjumul ALom : IT : 500000 
+select concat_ws( ':', concat_ws(' ',fname,lname),emp_id , dept) from employee limit 1 ;
 
 
 
