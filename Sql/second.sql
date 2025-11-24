@@ -156,7 +156,13 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 --reverse 
 
 -- select reverse('Hello')
-select length(lname) from employee ; 
+-- select length(lname) from employee ; 
+
+
+--Task : you have to disply the names of them where their's first name's len is >= 5 
+
+select * from employee where length(fname) >= 5 order by emp_id; 
+
 
 
 
