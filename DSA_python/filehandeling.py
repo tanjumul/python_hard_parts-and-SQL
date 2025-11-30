@@ -36,12 +36,18 @@
 
 # print(r.read())
 
-with open('tanjumul_batman.txt','w') as r : 
-    r.write('You know what im batman , SON')
+# with open('tanjumul_batman.txt','w') as r : 
+#     r.write('You know what im batman , SON')
     
-with open('tanjumul_batman.txt')  as r: 
+# with open('tanjumul_batman.txt')  as r: 
+#     print(r.read())
+    
+    
+with open('tanju_flash.txt','w') as r : 
+    r.write('Tanjumulul is the heart of speed') 
+
+with open('tanju_flash.txt') as r : 
     print(r.read())
-    
     
     
     
