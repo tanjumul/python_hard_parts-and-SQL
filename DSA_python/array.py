@@ -41,12 +41,27 @@ arr1 = array('i',[11,44,55,66,77,88,55,43,221,45])
 
 
 
-from array import * 
+# from array import * 
 
-arr12 = array('i', [1,34,55,33,245,33,223,44])
+# arr12 = array('i', [1,34,55,223,44])
 
 
-def perform_array(array): 
-    for i in array:
-        print(i)
-perform_array(arr12)
+# def perform_array(array): 
+#     for i in array:
+#         print(i)
+# perform_array(arr12)
+
+
+#another way if i want to create a function that will create an array then i will initialize the elements 
+
+
+def processing(elementss, typed = 'i'): 
+    
+    arr = array(typed,elementss)
+    
+    for ii in arr : 
+        print(ii)
+    
+    return arr
+
+my_elements = processing([12,44,22,12])
