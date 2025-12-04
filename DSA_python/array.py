@@ -19,7 +19,7 @@
 
 #inserting in the begining to the array: 
 
-from array import *
+# from array import *
 
 # my_array1 = array.array('i',[1,2,3,4,5,6])
 # print(my_array1)
@@ -85,19 +85,30 @@ from array import *
 #     else: 
 #         print(array[index])
 
-# find_array_num(arr13,int(input('your array number :')))
+# # find_array_num(arr13,int(input('your array number :')))
 
 
-#searching for element : by linear search : 
-import array 
+# #searching for element : by linear search : 
+# import array 
 
-#time complexity of linear search is o(n)
-my_array1 = array.array('i',[1,3,4,56,7,54,32,2])
+# #time complexity of linear search is o(n)
+# my_array1 = array.array('i',[1,3,4,56,7,54,32,2])
 
-def linear_search(arr,target): #----> o(n)
-    for i in range(len(arr)): 
-        if arr[i] == target:  #----- o(1)
-            return arr[target]   #----- o(1)
-    else : 
-            return -1   #----- o(1)
-print(linear_search(my_array1, 3 ))     #----- o(1)
+# def linear_search(arr,target): #----> o(n)
+#     for i in range(len(arr)): 
+#         if arr[i] == target:  #----- o(1)
+#             return arr[target]   #----- o(1)
+#     else : 
+#             return -1   #----- o(1)
+# print(linear_search(my_array1, 3 ))     #----- o(1)
+
+
+#deletion of an array 
+
+from array import * 
+
+arr1 = array('i',[1,2,3,44,55,6])
+
+arr1.remove(55)
+
+print(arr1)
