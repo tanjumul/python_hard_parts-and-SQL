@@ -67,17 +67,22 @@ arr1 = array('i',[11,44,55,66,77,88,55,43,221,45])
 
 # my_elements = processing([12,44,22,12])
 
-
+def processment(ele , typed = 'i'): 
+    arr = array(typed,ele)
+    for ii in arr: 
+        print(ii)
+    return arr 
+my_ele = processment([1,3,2,14,22])
 ## now if i want to access each elelment and i will create a funciton : 
 
 
-arr13 = array('i',[11,22,33,44,55,66,7])
+# arr13 = array('i',[11,22,33,44,55,66,7])
 
-def find_array_num(array, index): 
-    if index > len(array):
-        print('Here is no such array num what you are giving index number')
+# def find_array_num(array, index): 
+#     if index > len(array):
+#         print('Here is no such array num what you are giving index number')
         
-    else: 
-        print(array[index])
+#     else: 
+#         print(array[index])
 
-find_array_num(arr13,int(input('your array number :')))
+# find_array_num(arr13,int(input('your array number :')))
