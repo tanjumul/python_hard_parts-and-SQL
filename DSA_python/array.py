@@ -107,7 +107,7 @@
 
 from array import * 
 
-arr1 = array('i',[1,2,3,44,55,6])
+arr1 = array('i',[1,2,3,44,55,6]) #time complexity o(n)
 
 arr1.remove(55)
 
