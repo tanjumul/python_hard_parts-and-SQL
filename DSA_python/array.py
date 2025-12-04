@@ -24,7 +24,7 @@ from array import *
 # my_array1 = array.array('i',[1,2,3,4,5,6])
 # print(my_array1)
 #
-arr1 = array('i',[11,44,55,66,77,88,55,43,221,45])
+# arr1 = array('i',[11,44,55,66,77,88,55,43,221,45])
 #inserting now ; 
 # my_array1.insert(0,10) #inserting at the (position , value) 
 
@@ -67,12 +67,12 @@ arr1 = array('i',[11,44,55,66,77,88,55,43,221,45])
 
 # my_elements = processing([12,44,22,12])
 
-def processment(ele , typed = 'i'): 
-    arr = array(typed,ele)
-    for ii in arr: 
-        print(ii)
-    return arr 
-my_ele = processment([1,3,2,14,22])
+# def processment(ele , typed = 'i'): 
+#     arr = array(typed,ele)
+#     for ii in arr: 
+#         print(ii)
+#     return arr 
+# my_ele = processment([1,3,2,14,22])
 ## now if i want to access each elelment and i will create a funciton : 
 
 
@@ -86,3 +86,17 @@ my_ele = processment([1,3,2,14,22])
 #         print(array[index])
 
 # find_array_num(arr13,int(input('your array number :')))
+
+
+#searching for element : by linear search : 
+import array 
+
+my_array1 = array.array('i',[1,3,4,56,7,54,32,2])
+
+def linear_search(arr,target): 
+    for i in range(len(arr)): 
+        if arr[i] == target: 
+            return arr[target]
+    else : 
+            return -1 
+print(linear_search(my_array1, 3 ))
