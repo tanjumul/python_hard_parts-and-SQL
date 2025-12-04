@@ -91,12 +91,13 @@ from array import *
 #searching for element : by linear search : 
 import array 
 
+#time complexity of linear search is o(n)
 my_array1 = array.array('i',[1,3,4,56,7,54,32,2])
 
-def linear_search(arr,target): 
+def linear_search(arr,target): #----> o(n)
     for i in range(len(arr)): 
-        if arr[i] == target: 
-            return arr[target]
+        if arr[i] == target:  #----- o(1)
+            return arr[target]   #----- o(1)
     else : 
-            return -1 
-print(linear_search(my_array1, 3 ))
+            return -1   #----- o(1)
+print(linear_search(my_array1, 3 ))     #----- o(1)
