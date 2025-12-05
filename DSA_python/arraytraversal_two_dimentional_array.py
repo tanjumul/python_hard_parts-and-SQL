@@ -13,8 +13,9 @@ my_new_array = np.array([[1,2,3,4,5,6],[11,21,31,41,51,61],[12,22,32,42,52,62],[
     
     
 def traverserTA(array):
-    for i in range(len(array)): 
-        for j in range(len(array[0])):
-            print(array[i][j])
+    for i in range(len(array)): #complexity : o(mn)
+        for j in range(len(array[0])): #complexity : o(n)
+            print(array[i][j]) #complexity : o(1)
 
-traverserTA(my_new_array)
+traverserTA(my_new_array) #complexity : o(1)
+
