@@ -98,4 +98,14 @@ print('step :12')
 print(my_array.count(10))
 
 
+#step 13 converting array to string : 
+print("step 13")
+print('in python3 we use tobytes not tostring ')
 
+
+#####need to see the 13 and 14 here :; 
+
+#step 15  
+
+#step 16 
+print(my_array[1:4]) #index , till the element
