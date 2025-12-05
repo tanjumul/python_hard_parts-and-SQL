@@ -26,7 +26,16 @@ dimentional array the next to all arrays will be replaced or steped once """
 import numpy as np 
 
 my_new_array = np.array([[1,2,3,4,5,6],[11,21,31,41,51,61],[12,22,32,42,52,62],[14,24,34,44,54,64]])
-# print(my_new_array)
+print(my_new_array)
 
-my_second_array = np.append(my_new_array,[[10,10,10,10,10,10]],axis=0)
-print(my_second_array)
+# my_second_array = np.append(my_new_array,[[10,10,10,10,10,10]],axis=0)
+# print(my_second_array)
+
+#accessing an element in a two dimentional array: 
+def accessElements(array , rowIndex , columnIndex): 
+    if rowIndex >= len(array) and columnIndex >= len(array[0]): 
+        print('Error ahead')
+    else: 
+        print(array[rowIndex][columnIndex])
+    
+accessElements(my_new_array , 2,4)
