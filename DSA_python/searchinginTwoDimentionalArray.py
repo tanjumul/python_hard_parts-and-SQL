@@ -10,13 +10,13 @@ my_new_array = np.array ([[1,2,3,4,5,6],
 
 
 def serarching(array,value): 
-        for i in range(len(array)):
-             for j in range(len(array[0])): 
-                 if array[i][j] == value: 
-                     return f'value is located in the {i} {j} and the value you are looking {value}'
+        for i in range(len(array)):#---------> this has the complexity of o(mn)
+             for j in range(len(array[0])): #------------> this has the complexity of o(n)
+                 if array[i][j] == value: #----------------> this has the complexity of o(1)
+                     return f'value is located in the {i} {j} and the value you are looking {value}' #o(1)
         else: 
                       
-                      return 'The number you are looking here in the array doesnt exitst'
+                      return 'The number you are looking here in the array doesnt exitst' #--->O(1)
                       
 print(serarching(my_new_array,51))
 
