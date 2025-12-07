@@ -9,7 +9,8 @@ class Solution:
         return False
 
 
-
+#i took a day off planed a little and thought what i should be doing in 2 next month , building and breaking and reshaping my 
+#lost career ! Backend it is.. 
 
 
 
